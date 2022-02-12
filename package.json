@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production --config webpack.config.js",
+    "build": "node ./scripts/create-env.js && webpack --mode production --config webpack.config.js",
     "dev": "webpack --config webpack.config.dev.js"
   },
   "repository": {
@@ -36,7 +36,7 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.5.3",
-    "sass": "^1.49.0",
+    "sass": "^1.49.7",
     "sass-loader": "^12.4.0",
     "terser-webpack-plugin": "^5.3.0",
     "url-loader": "^4.1.1",
